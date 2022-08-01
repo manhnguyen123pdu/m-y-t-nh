@@ -42,10 +42,29 @@
         margin: 3px;
         border-radius: 50%;
         border: 1px;
+        font-weight: 600;
+    }
+    .btn{
+        background-color: rgba(128, 128, 128, 0.411);
     }
     .btn2{
         background-color: rgb(255, 153, 0);
         color: white;
+    }
+    .btn3{
+        background-color: rgb(0, 38, 255);
+        color: white;
+    }
+    @media screen and (max-width:600px) {
+        {
+            position: relative;
+        }
+        .caculate{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translatey(-50%) translateX(-50%);
+        }
     }
 
 </style>
@@ -81,7 +100,7 @@
     <br>
     <button class="btn">0</button>
     <button class="btn">.</button>
-    <button onclick="result()">=</button>
+    <button class="btn3" onclick="result()">=</button>
     <button class="btn btn2">/</button>
     <br>
     </div>
