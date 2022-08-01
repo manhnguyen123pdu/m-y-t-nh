@@ -7,10 +7,16 @@
     <title>Document</title>
 <link rel="stylesheet" href="./sty.css">
 <style>
-    .display{
+    .caculate{
         border: 1px solid gray;
-        width: 200px;
+        display: inline-block;
+        padding: 10px;
+    }
+    .display{
+        border-bottom: 1px solid gray;
+        width: 240px;
         height: 50px;
+        margin-bottom: 20px;
     }
     p,input{
         text-align: right;
@@ -18,26 +24,42 @@
         font-size: 15px;
         border: none;
     }
+    p{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    input{
+        width: 95%;
+    }
     input:focus{
         outline: none;
     }
     button{
-        width: 40px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         text-align: center;
         line-height: 30px;
         margin: 3px;
+        border-radius: 50%;
+        border: 1px;
     }
+    .btn2{
+        background-color: rgb(255, 153, 0);
+        color: white;
+    }
+
 </style>
 </head>
 <body>
+    <div class="caculate">
+        
    <label for="out1">
     <div class="display">
         <input  id="out1" type="text">
         <p id="out2"></p>
     </div>
    </label>
-    <button onclick="reset()">AC</button>
+    <button class="btn2" onclick="reset()">AC</button>
     <button onclick="clear1()">C</button>
     <button class="btn">(</button>
     <button class="btn">)</button>
@@ -45,23 +67,24 @@
     <button class="btn">1</button>
     <button class="btn">2</button>
     <button class="btn">3</button>
-    <button class="btn">+</button>
+    <button class="btn btn2">+</button>
     <br>
     <button class="btn">4</button>
     <button class="btn">5</button>
     <button class="btn">6</button>
-    <button class="btn">-</button>
+    <button class="btn btn2">-</button>
     <br>
     <button class="btn">7</button>
     <button class="btn">8</button>
     <button class="btn">9</button>
-    <button class="btn">*</button>
+    <button class="btn btn2">*</button>
     <br>
     <button class="btn">0</button>
     <button class="btn">.</button>
     <button onclick="result()">=</button>
-    <button class="btn">/</button>
+    <button class="btn btn2">/</button>
     <br>
+    </div>
     <script src="./js.js"></script>
 </body>
 </html>
