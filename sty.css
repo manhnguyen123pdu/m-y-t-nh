@@ -1,0 +1,30 @@
+img{
+    width: 60px;
+    height:60px;
+    margin-right: 5px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border: 1px solid gray ;
+}
+.purchase{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+.left,.right{
+    border: 1px solid gray;
+    width: 250px;
+    height:500px;
+}
